@@ -50,6 +50,19 @@ body {
   text-decoration: none;
 }
 
+.hover a:hover {
+    color: var(--accent-color);
+  }
+
+.focus a:focus{
+    color: green;
+}
+
+.active a:active {
+    color: red;
+  }
+
+/*
 .links a:hover {
   color: var(--accent-color);
 }
@@ -60,7 +73,7 @@ body {
 
 .links a:active {
   color: red;
-}
+}*/
 
 .current {
   color: var(--accent-color) !important;
@@ -216,9 +229,4 @@ h2 {
 .address_text_style {
   /* стиль адреса */
   font-style: normal;
-}
-
-.ul_address {
-  /* список контакты в подвале */
-  list-style-type: none;
 }
