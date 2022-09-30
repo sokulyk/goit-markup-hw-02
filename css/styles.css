@@ -1,1 +1,224 @@
-#css
+:root {
+  --text-main-color: #212121; /*основной цвет текста*/
+  --light-main-color: #ffffff; /*белый цвет текста*/
+  --description-color: #757575; /*цвет описания списков */
+  --accent-color: #2196f3; /*цвет и акцентов */
+}
+
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background: #ffffff;
+}
+
+.logo-text {
+  font-family: "Raleway"; /* задаём шрифт и размер ЛОГО */
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-text-blue {
+  /*  цвет левой части ЛОГО */
+  color: var(--accent-color);
+}
+
+.logo-text-black {
+  /*  цвет правой части ЛОГО */
+  color: #000000;
+}
+
+.logo-text-white {
+  /*  цвет правой части ЛОГО в подвале */
+  color: var(--light-main-color);
+}
+
+.header_txt {
+  /* параметры шрифта в header */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* цвет и стиль ссылок в header */
+
+.links a {
+  color: var(--text-main-color);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--accent-color);
+}
+
+.links a:focus {
+  color: green;
+}
+
+.links a:active {
+  color: red;
+}
+
+.current {
+  color: var(--accent-color) !important;
+}
+
+.contact_links a {
+  color: var(--description-color);
+}
+
+.footer_links a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address_link {
+  /*  ссылка физ адреса футера */
+  color: var(--light-main-color) !important;
+}
+
+.list {
+  list-style: none; /* оформление списка Убираем маркеры у li*/
+}
+
+.hero {
+  /* основа цвета ШАПКИ */
+  background: #2f303a;
+}
+
+h1 {
+  /* параметры шрифта Заголовка h1 */
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-main-color);
+}
+
+.button_hero {
+  /* оформляем кнопку Замовити */
+  width: 216px;
+  height: 50px;
+  background: var(--accent-color);
+  border: 2px solid #2f303a;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--light-main-color);
+  /* курсор мыши при наведении*/
+  cursor: pointer;
+}
+
+.button_hero:hover {
+  /* цвет кнопки при наведении */
+  background: #4da8f1;
+}
+
+.button_hero:focus {
+    /* цвет кнопки при нажатии */
+    background: var(--accent-color);
+    border: 3px solid #2f303a;
+  }
+
+.button_hero:active {
+  /* цвет кнопки при нажатии */
+  background: var(--description-color);
+}
+
+.ul_peculiarities {
+  /* оформление списка Особенности  */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+
+.ul_peculiarities > li > h3 {
+  /* заголовок в особенностях */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-main-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+h2 {
+  /* заголовкок в Чим Займаемося и Наша команда */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.44;
+  letter-spacing: 0.03em;
+  color: var(--text-main-color);
+}
+
+.our_team {
+  /* фон блока Наша команда */
+  background: #f5f4fa;
+}
+
+.our_team h3 {
+  /* стиль заголовков Наша команда */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-main-color);
+}
+
+.our_team li {
+  background: #ffffff;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our_team p {
+  /* имена и профессии команды */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+
+.footer_txt {
+  /* параметры шрифта в подвале */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71; /* or 171% */
+  letter-spacing: 0.03em;
+  background: #2f303a;
+}
+
+.address_text_style {
+  /* стиль адреса */
+  font-style: normal;
+}
+
+.ul_address {
+  /* список контакты в подвале */
+  list-style-type: none;
+}
