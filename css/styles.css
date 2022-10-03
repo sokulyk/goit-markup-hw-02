@@ -9,7 +9,7 @@
 
 body {
   height: 100%;
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   background: var(--main-bg);
   font-weight: 400;
@@ -17,28 +17,38 @@ body {
 
 /* цвет и стиль ссылок*/
 
-.links a {
-  color: var(--text-main-color);
+.links {
   text-decoration: none;
 }
 
-.links.hat{
+.links.hat,
+.links.contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--text-main-color);
 }
 
-.links a:hover,
+.links:hover,
+.links.contacts:hover,
+.links.foot:hover,
+.links.street:hover,
 .links.current {
   color: var(--accent-color);
 }
 
-.links a:focus {
+.links:focus,
+.links.contacts:focus,
+.links.foot:focus,
+.links.street:focus {
   color: green;
 }
 
-.links a:active {
+.links:active,
+.links.contacts:active,
+.links.foot:active,
+.links.street:active {
   color: red;
 }
 
@@ -48,13 +58,13 @@ body {
   color: var(--description-color);
 }
 
-.links.foot, .links.street {
+.links.foot,
+.links.street {
   /*  стиль ссылок в подвале */
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background: #2f303a;
 }
 
 .links.street {
@@ -89,7 +99,8 @@ body {
   color: var(--light-main-color);
 }
 
-.hero-base, .footer-base {
+.hero-base,
+.footer-base {
   /* основа цвета ШАПКИ и подвала */
   background: #2f303a;
 }
@@ -139,7 +150,7 @@ h1 {
   background: #88c4f5;
 }
 
-.peculiarities h3 {
+.features-header {
   /* заголовок в особенностях */
   font-weight: 700;
   font-size: 14px;
@@ -149,7 +160,7 @@ h1 {
   color: var(--text-main-color);
 }
 
-.peculiarities p {
+.features-par {
   /* оформление списка Особенности  */
   /* font-weight: 400; */
   font-size: 14px;
