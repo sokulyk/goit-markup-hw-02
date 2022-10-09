@@ -5,6 +5,7 @@
   --accent-color: #2196f3; /*цвет и акцентов */
   --main-bg: #fff; /*цвет основного бєкгроунда */
   --light-gray: #f5f4fa; /*цвет кнопок и рамок*/
+  --logo: #000000;
 }
 
 body {
@@ -15,14 +16,34 @@ body {
   font-weight: 400;
 }
 
-/* цвет и стиль ссылок*/
+.logo {
+  font-family: "Raleway"; /* задаём шрифт и размер ЛОГО */
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo);
+}
 
-.links {
+.logo-accent {
+  /*  цвет левой части ЛОГО */
+  color: var(--accent-color);
+}
+
+.logo-white {
+  /*  цвет правой части ЛОГО в подвале */
+  color: var(--light-main-color);
+}
+
+/* цвет и стиль ссылок*/
+.links,
+.logo {
   text-decoration: none;
 }
 
-.links.hat,
-.links.contacts {
+/* стиль ссылкок шапка */
+.hat,
+.contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -30,73 +51,41 @@ body {
   color: var(--text-main-color);
 }
 
-.links:hover,
-.links.contacts:hover,
-.links.foot:hover,
-.links.street:hover,
-.links.current {
-  color: var(--accent-color);
-}
-
-.links:focus,
-.links.contacts:focus,
-.links.foot:focus,
-.links.street:focus {
-  color: green;
-}
-
-.links:active,
-.links.contacts:active,
-.links.foot:active,
-.links.street:active {
-  color: red;
-}
-
-/* цвет ссылок контактов*/
-
-.links.contacts {
+/* цвет ссылок контактов шапка*/
+.contacts {
   color: var(--description-color);
 }
 
-.links.foot,
-.links.street {
-  /*  стиль ссылок в подвале */
+/* цвет ховера и текущ. ссылки*/
+.links:hover,
+.current {
+  color: var(--accent-color);
+}
+
+.links:focus {
+  color: green;
+}
+
+.links:active {
+  color: red;
+}
+
+/*  стиль ссылок в подвале */
+.foot-links,
+.street-links {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.links.street {
-  /*  ссылка физ адреса в подвале */
+/*  цвет адреса в подвале */
+.street-links {
   color: var(--light-main-color);
 }
 
 .list {
   list-style: none; /* оформление списка Убираем маркеры у li*/
-}
-
-.links.logo-text {
-  font-family: "Raleway"; /* задаём шрифт и размер ЛОГО */
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo-text-blue {
-  /*  цвет левой части ЛОГО */
-  color: var(--accent-color);
-}
-
-.logo-text-black {
-  /*  цвет правой части ЛОГО */
-  color: #000000;
-}
-
-.logo-text-white {
-  /*  цвет правой части ЛОГО в подвале */
-  color: var(--light-main-color);
 }
 
 .hero-base,
